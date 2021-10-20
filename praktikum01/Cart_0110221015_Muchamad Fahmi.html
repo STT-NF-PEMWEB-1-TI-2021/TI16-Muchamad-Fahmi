@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="shortcut icon" href="assets/pizza.ico">
+
+    <style>
+        * {
+            font-family: 'Source Sans Pro';
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Box tiap sub */
+        .box_container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .header {
+            width: 100%;
+            height: 90px;
+            background: orange;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            padding: 20px;
+            background: #E9E2CE;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .box_kiri {
+            width: 600px;
+            height: 400px;
+            float: left;
+            background: #E9E2CE;
+        }
+
+        .box_kanan {
+            width: 300px;
+            height: 250px;
+            float: right;
+            background: #8E8D8E;
+
+        }
+
+        .footer {
+            width: 100%;
+            height: 70px;
+            background: #E9E2CE;
+
+        }
+
+        /*eNd Sub*/
+
+        img {
+            width: 80px;
+            margin-left: -180px;
+            margin-top: 10px;
+        }
+
+        /* Navbar */
+        /* menghilang efek link dan mengatur jarak */
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 14px 10px
+        }
+
+        ul {
+            padding: 14px
+        }
+
+        /* menjadi agar 1 baris horizontal */
+        li {
+            list-style: none;
+            display: inline;
+        }
+
+        /* table cantik */
+        .percantik_table {
+            margin-top: 5%;
+            color: #444;
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #f2f5f7;
+        }
+
+        .percantik_table tr th {
+            background: #35A9DB;
+            color: #fff;
+            font-weight: normal;
+        }
+
+        .percantik_table,
+        th,
+        td {
+            padding: 8px 20px;
+            text-align: center;
+        }
+
+
+        .text-card {
+            padding: 0;
+        }
+
+        .text-card .text-left {
+            float: left;
+            padding: 10px;
+            margin-left: 15px;
+        }
+
+        .text-card .text-right {
+            float: right;
+            margin-right: 15px;
+        }
+
+        .tombol_co {
+            margin-top: -5px;
+            background: #2C97DF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 11pt;
+        }
+
+        .search_subrek {
+            padding: 8px 15px;
+            border: 2px solid #333
+        }
+
+        .tombol_subrek {
+            position: relative;
+            padding: 6px 15px;
+            border: 2px solid #c92828;
+            background-color: #c92828;
+            color: #fafafa;
+        }
+
+        .tombol_subrek:hover {
+            background-color: #fafafa;
+            color: #c92828;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="box_container">
+
+        <div class="header">
+
+            <img src="assets/pizza.png" alt="Image/LogoPizza">
+
+            <h1 style="float: left; margin-top: 25px; margin-left: 10%;">
+                <a style="font-size: 20px;" href="#">PizzaJoss</a>
+            </h1>
+
+            <a style="float: right; margin-top: 10px;" href="#">Cart(1)</i></a>
+            <a style="float: right; margin-top: 10px;" href="#"><i class="fa fa-search"></i></a>
+            <a style="float: right; margin-top: 10px;" href="#"><i class="fa fa-shopping-cart"></i></a>
+
+
+
+            <ul style="margin-top: -75px; margin-left: 22%;">
+                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
+                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
+                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
+            </ul>
+
+
+
+
+        </div>
+
+        <div class="box">
+            <div class="box_kiri">
+                <h2>Your Cart</h2>
+
+                <table class="percantik_table">
+
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantiy</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Piza1M</td>
+                            <td><b>Rp. 200.000</b></td>
+                            <td><select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align:right;">
+                                <b>Subtotal : $20.00</b>
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </div>
+            <div class="box_kanan">
+                <h3 style="margin-top: 15px; margin-left: 15px;">Summary (1 Item)</h3>
+
+
+                <div style="margin-top:10px;" class="text-card">
+                    <p class="text-left">
+                        Subtotal
+                    </p>
+                    <p class="text-right">
+                        $20.00
+                    </p>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div class="text-card">
+                    <p class="text-left">
+                        Shipping
+                    </p>
+                    <p class="text-right">
+                        -
+                    </p>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div class="text-card">
+                    <p class="text-left">
+                        Est. Taxes
+                    </p>
+                    <p class="text-right">
+                        -
+                    </p>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+
+
+                <hr>
+
+                <div style="margin-top: 10px;" class="text-card">
+                    <p class="text-left">
+                        Total
+                    </p>
+                    <p class="text-right">
+                        $20.00
+                    </p>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <center>
+                    <button type="submit" class="tombol_co">Checkout</button>
+                </center>
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <span style="float: right; margin-right: 20px; margin-top: 10px;">
+                <h4> Stay in Touch! Join our Newsletter.</h4>
+                <input type="text" class="search_subrek" placeholder="Enter Email">
+                <button type="submit" class="tombol_subrek">Cari</button>
+            </span>
+
+            <ul>
+                <li style="border-right: 1px solid;"><a href=" #">Category 1</a></li>
+                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
+                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
+            </ul>
+
+
+            <p style="margin-left: 20px;">
+                <i style="margin:1px;" class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-cc-paypal"></i>
+
+
+
+            </p>
+
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
