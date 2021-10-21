@@ -5,328 +5,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Cart</title>
 
     <link rel="shortcut icon" href="assets/pizza.ico">
 
-    <style>
-        * {
-            font-family: 'Source Sans Pro';
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Box tiap sub */
-        .box_container {
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .header {
-            width: 100%;
-            height: 90px;
-            background: orange;
-            margin-bottom: 10px;
-        }
-
-        .box {
-            padding: 20px;
-            background: #E9E2CE;
-            margin-bottom: 10px;
-            overflow: hidden;
-        }
-
-        .box_kiri {
-            width: 600px;
-            height: 400px;
-            float: left;
-            background: #E9E2CE;
-        }
-
-        .box_kanan {
-            width: 300px;
-            height: 250px;
-            float: right;
-            background: #8E8D8E;
-
-        }
-
-        .footer {
-            width: 100%;
-            height: 70px;
-            background: #E9E2CE;
-
-        }
-
-        /*eNd Sub*/
-
-        img {
-            width: 80px;
-            margin-left: -180px;
-            margin-top: 10px;
-        }
-
-        /* Navbar */
-        /* menghilang efek link dan mengatur jarak */
-        a {
-            text-decoration: none;
-            font-size: 20px;
-            padding: 14px 10px
-        }
-
-        ul {
-            padding: 14px
-        }
-
-        /* menjadi agar 1 baris horizontal */
-        li {
-            list-style: none;
-            display: inline;
-        }
-
-        .text-card {
-            padding: 0;
-        }
-
-        .text-card .text-left {
-            float: left;
-            padding: 10px;
-            margin-left: 15px;
-        }
-
-        .text-card .text-right {
-            float: right;
-            margin-right: 15px;
-        }
-
-        .tombol_co {
-            margin-top: -5px;
-            background: #2C97DF;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-size: 11pt;
-        }
-
-        .search_subrek {
-            padding: 8px 15px;
-            border: 2px solid #333
-        }
-
-        .tombol_subrek {
-            position: relative;
-            padding: 6px 15px;
-            border: 2px solid #c92828;
-            background-color: #c92828;
-            color: #fafafa;
-        }
-
-        .tombol_subrek:hover {
-            background-color: #fafafa;
-            color: #c92828;
-        }
-
-        .ucapan {
-            margin-top: -50px;
-            margin-left: 70px;
-        }
-    </style>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
 
 </head>
 
-<body>
+<body style="margin: 0;">
 
 
-    <div class="box_container">
+    <div style="width: 100%; background-color: #E9E2CE; display: grid; grid-template-columns: 15% 70% 20%;">
 
-        <div class="header">
+        <h3> <img style="width: 40px; margin-top: -20px;" src="assets/pizza.png" alt=""> PizzaAsik</h3>
 
-            <img src="assets/pizza.png" alt="Image/LogoPizza">
+        <ul style="list-style: none; margin-top: 25px">
+            <li style="display: inline; padding: 5px;border-right: 2px solid;">
+                <a href="#" style="color: black; text-decoration: none; font-weight: bold">Menu 1</a>
+            </li>
 
-            <h1 style="float: left; margin-top: 25px; margin-left: 10%;">
-                <a style="font-size: 20px;" href="#">PizzaJoss</a>
-            </h1>
+            <li style="display: inline; padding: 5px;border-right: 2px solid;">
+                <a href="#" style="color: black; text-decoration: none; font-weight: bold">Menu 2</a>
+            </li>
 
-            <a style="float: right; margin-top: 10px;" href="#">Cart(1)</i></a>
-            <a style="float: right; margin-top: 10px;" href="#"><i class="fa fa-search"></i></a>
-            <a style="float: right; margin-top: 10px;" href="#"><i class="fa fa-shopping-cart"></i></a>
+            <li style="display: inline; padding: 5px;border-right: 2px solid;">
+                <a href="#" style="color: black; text-decoration: none; font-weight: bold">Menu 3</a>
+            </li>
+        </ul>
 
-
-
-            <ul style="margin-top: -75px; margin-left: 22%;">
-                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
-                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
-                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
-            </ul>
-
-
-
-
+        <div>
+            <h3>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                <a href=""><i class="fa fa-search"></i></a> Cart(1)</h3>
         </div>
 
-        <div class="box">
-            <div class="box_kiri">
+    </div>
 
+    <div style="display: grid; grid-template-columns: 50% 45%; margin-top: 30px">
+
+        <div style="width: 100%;">
+
+            <div style="margin-left: 5%;">
                 <i class="fa fa-check-circle-o fa-4x"></i>
-                <div class="ucapan">
+                <div style="margin-top: -12%; margin-left: 10%;">
                     <p>Order 121212</p>
                     <h4>Thank you, Kenny!</h4>
                 </div>
-                <br>
-                <hr>
+            </div>
 
-                <p style="margin-bottom: 10px; margin-top: 20px;">
+            <hr>
+
+            <div style="margin-left: 5%;">
+                <h5 style="margin-bottom: 10px; margin-top: 20px;">
                     Your order is confirmed.
-                </p>
+                </h5>
 
-                <p>
+                <h5>
                     We've accepted your order and we're getting it ready.
+                </h5>
+            </div>
+
+            <hr>
+
+            <h2 style="margin-bottom: 10px; margin-top: 20px; margin-left: 5%;">Customer Information</h2>
+
+            <div>
+                <h3 style="margin-left: 5%;">
+                    Shipping Address
+                </h3>
+                <p style="margin-left: 5%;">
+                    Kenny Bostlok <br>
+                    12 Waido Point Road
                 </p>
+            </div>
 
+            <div style="margin-top: -95px; margin-left: 295px;">
+                <h3>
+                    Shipping Address
+                </h3>
+                <p>
+                    Kenny Bostlok <br>
+                    12 Waido Point Road
+                </p>
+            </div>
 
+            <div style="margin-left: 5%;">
+                <h3>
+                    Shipping Method
+                </h3>
+                <p>
+                    UPS Ground (Estimated ship<br>
+                    time of 3-6 days)
+                </p>
+            </div>
 
-                <h2 style="margin-bottom: 10px; margin-top: 20px;">Customer Information</h2>
-
-                <div>
-                    <h3>
-                        Shipping Address
-                    </h3>
-                    <p>
-                        Kenny Bostlok <br>
-                        12 Waido Point Road
-                    </p>
-                </div>
-
-                <div style="margin-top: -55px; margin-left: 295px;">
-                    <h3>
-                        Shipping Address
-                    </h3>
-                    <p>
-                        Kenny Bostlok <br>
-                        12 Waido Point Road
-                    </p>
-                </div>
-
-                <br><br>
-
-                <div>
-                    <h3>
-                        Shipping Method
-                    </h3>
-                    <p>
-                        UPS Ground (Estimated ship<br>
-                        time of 3-6 days)
-                    </p>
-                </div>
-
-                <div style="margin-top: -55px; margin-left: 295px;">
-                    <h3>
-                        Payments Method
-                    </h3>
-                    <p>
-                        <i class="fa fa-credit-card-alt"> Bank BCA 312432423</i>
-                    </p>
-                </div>
-
+            <div style="margin-top: -95px; margin-left: 295px;">
+                <h3>
+                    Payments Method
+                </h3>
+                <p>
+                    <i class="fa fa-credit-card-alt"> Bank BCA 312432423</i>
+                </p>
             </div>
 
 
-            <div class="box_kanan">
-                <h3 style="margin-top: 15px; margin-left: 15px;">Summary (1 Item)</h3>
 
 
-                <div style="margin-top:10px;" class="text-card">
-                    <p class="text-left">
-                        Subtotal
-                    </p>
-                    <p class="text-right">
-                        $20.00
-                    </p>
-
-                    <div style="clear: both;"></div>
-                </div>
-
-                <div class="text-card">
-                    <p class="text-left">
-                        Shipping
-                    </p>
-                    <p class="text-right">
-                        -
-                    </p>
-
-                    <div style="clear: both;"></div>
-                </div>
-
-                <div class="text-card">
-                    <p class="text-left">
-                        Est. Taxes
-                    </p>
-                    <p class="text-right">
-                        -
-                    </p>
-
-                    <div style="clear: both;"></div>
-                </div>
+        </div>
 
 
 
-                <hr>
 
-                <div style="margin-top: 10px;" class="text-card">
-                    <p class="text-left">
-                        Total
-                    </p>
-                    <p class="text-right">
-                        $20.00
-                    </p>
+        <div style="background: #f2f5f7; margin-left: 100px;padding: 10px;">
 
-                    <div style="clear: both;"></div>
-                </div>
+            <h3>Summary (1Item)</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th align="left">Subtotal</th>
+                    <th align="right">$20.000</th>
+                </tr>
+                <tr>
+                    <th align="left">Shipping</th>
+                    <th align="right">$2.20</th>
+                </tr>
+                <tr>
+                    <th align="left">Est. Taxes</th>
+                    <th align="right">1.40</th>
+                </tr>
+            </table>
+            <hr />
 
+            <div style="padding-bottom: 10px; margin-top: -10px">
+                <p>Gift card or discount code</p>
                 <center>
-                    <button type="submit" class="tombol_co">Checkout</button>
+                    <input type="text" style="width: 50%; padding: 5px" />
+                    <button type="button" style="width: 30%; padding: 5px;margin-left: -10px;">
+                        Apply
+                    </button>
                 </center>
             </div>
+
+            <table style="width: 100%; margin-top: 5%; margin-bottom: 5%;">
+                <tr>
+                    <th align="left">Total</th>
+                    <th align="right">$23.60</th>
+                </tr>
+            </table>
+
+            <button
+                style="width: 100%; background: #62a850; text-align: center;color: #fff; border: none; padding: 10px;">
+                CHECKOUT
+            </button>
         </div>
 
-        <div class="footer">
-
-            <span style="float: right; margin-right: 20px; margin-top: 10px;">
-                <h4> Stay in Touch! Join our Newsletter.</h4>
-                <input type="text" class="search_subrek" placeholder="Enter Email">
-                <button type="submit" class="tombol_subrek">Cari</button>
-            </span>
-
-            <ul>
-                <li style="border-right: 1px solid;"><a href=" #">Category 1</a></li>
-                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
-                <li style="border-right: 1px solid;"><a href="#">Category 1</a></li>
-            </ul>
+    </div>
 
 
-            <p style="margin-left: 20px;">
+    <footer
+        style="position: absolute; margin-top: 5%;width: 100%;background: #E9E2CE;display: grid;grid-template-columns: 15% 60% 30%;">
+        <div style="padding: 5px">
+            <h3>&#127829; PizzaAsik</h3>
+            <p>
                 <i style="margin:1px;" class="fa fa-cc-visa"></i>
                 <i class="fa fa-cc-mastercard"></i>
-                <i class="fa fa-cc-paypal"></i>
+                <i class="fa fa-cc-paypal"></i></p>
+        </div>
+        <div>
+            <ul style="list-style: none; margin-top: 25px">
+                <li style="display: inline; padding: 5px;border-right: 2px solid;">
+                    <a href="#" style="color: black; text-decoration: none; font-weight: bold">Menu 1</a>
+                </li>
 
+                <li style="display: inline; padding: 5px;border-right: 2px solid;">
+                    <a href="#" style="color: black; text-decoration: none; font-weight: bold">Menu 2</a>
+                </li>
 
-
-            </p>
-
-
+                <li style="display: inline; padding: 5px;border-right: 2px solid;">
+                    <a href="#" style="color: black; text-decoration: none; font-weight: bold">Menu 3</a>
+                </li>
+            </ul>
 
         </div>
-
-    </div>
-
-
-    </div>
-
-
+        <div>
+            <p>Stay In touch! Our Newsletter</p>
+            <div style="padding-bottom: 10px; margin-top: -10px">
+                <input type="text" style="padding: 5px" placeholder="Enter Your Email" />
+                <button type="button" style="padding: 5px; background-color: #62a850;color: white;margin-left: -10px;
+            ">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </footer>
 
 
 
