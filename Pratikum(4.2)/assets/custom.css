@@ -92,3 +92,11 @@ body {
     background-color: #62a850;color: white;
     margin-left: -10px;
 }
+
+.auto_kiri{
+    float: left;
+}
+
+.auto_kanan{
+    float: right;
+}
