@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+.pembagian_ukuran1{
+    width: 100%;
+    background-color: #E9E2CE;
+    display: grid;
+    grid-template-columns: 15% 70% 20%;
+}
+
+.pembagian_ukuran2{
+    display: grid;
+    grid-template-columns: 50% 45%;
+    margin-top: 30px
+}
+
+.image_pizza{
+    width: 40px;
+    margin-top: -20px;
+}
+
+.for_ul{
+    list-style: none;
+    margin-top: 25px
+}
+
+.for_li{
+    display: inline;
+    padding: 5px;
+    border-right: 2px solid;
+}
+
+.menu{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.customer_information{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.for_summary_item{
+    background: #f2f5f7;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.for_gift_card{
+    padding-bottom: 10px;
+    margin-top: -10px;
+}
+
+.button_gift_card{
+    width: 30%;
+    padding: 5px;
+    margin-left: -10px;
+}
+
+.total_summary_item{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.button_co_summary_item{
+    width: 100%;
+    background: #62a850;
+    text-align: center;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+.footer{
+    position: absolute;
+    margin-top: 5%;width: 100%;background: #E9E2CE;
+    display: grid;
+    grid-template-columns: 15% 60% 30%;
+}
+
+.newsletter{
+    padding-bottom: 10px;
+    margin-top: -10px
+}
+
+.button_newsletter{
+    padding: 5px;
+    background-color: #62a850;color: white;
+    margin-left: -10px;
+}
