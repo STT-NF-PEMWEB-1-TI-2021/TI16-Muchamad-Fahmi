@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.pembagian_ukuran{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    width: 70%;
+}
+
+.photo_me{
+    width: 240px;
+    height: 280px;
+    margin-top: 10px;
+    border: 2px solid #333;
+}
+
+.deskripsi{
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 20%;
+}
