@@ -20,3 +20,21 @@ body{
     margin-top: -15px;
     margin-left: 20%;
 }
+
+.text{
+    font-size: 18px;
+    text-align: left;
+}
+
+.pembagian_ukuran2{
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3,33%);
+}
+
+.pembagian_ukuran3{
+    display: grid;
+    padding-top:17px;
+    padding-left: 30px;
+    grid-template-columns: repeat(2, auto);
+}
