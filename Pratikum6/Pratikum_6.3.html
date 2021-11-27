@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratikum 6.3</title>
+
+    <style>
+        body {
+            background-color: #fdafb1;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 2%;
+            background-color: #98d1c7;
+            box-shadow: 1px 3px 10px;
+        }
+
+
+        .item2 {
+            width: 25%;
+            height: 350px;
+            margin-bottom: 2%;
+            background-color: #62b7b6;
+            box-shadow: 1px 3px 10px;
+
+        }
+
+        .item3 {
+            width: 73%;
+            height: 350px;
+            margin-bottom: 2%;
+            background-color: #fa7a7b;
+            box-shadow: 1px 3px 10px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .dalam_kotak {
+            width: 32%;
+            height: 150px;
+            padding: 0 5px 15px 5px;
+            align-self: flex-end;
+
+        }
+
+        .dalam_kotak img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .dalam_kotak2 {
+            width: 100%;
+            height: 10px;
+            align-self: flex-end;
+        }
+
+        .dalam_kotak:nth-child(5n) {
+            width: 100%;
+        }
+
+
+
+
+
+        .item4 {
+            width: 100%;
+            height: 100px;
+            background-color: #98d1c7;
+            box-shadow: 1px 3px 10px;
+
+        }
+
+        h1 {
+            color: #ffffff;
+            font-family: 'Franklin Gothic Medium', sans-serif;
+            text-shadow: 3px 2px 1px grey;
+            text-align: center;
+        }
+
+        /* .item2:nth-child(1n) {
+            width: 32%;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="item">
+            <h1>Header</h1>
+        </div>
+
+
+        <div class="item2">
+            <h1>Aside</h1>
+        </div>
+
+        <div class="item3">
+
+            <div class="dalam_kotak2">
+                <h1>Content</h1>
+            </div>
+            <div class="dalam_kotak">
+                <img src="./assets/img/img4.jpg" alt="Gambar">
+            </div>
+            <div class="dalam_kotak">
+                <img src="./assets/img/img4.jpg" alt="Gambar">
+            </div>
+            <div class="dalam_kotak">
+                <img src="./assets/img/img4.jpg" alt="Gambar">
+            </div>
+
+
+
+
+        </div>
+
+        <div class="item4">
+            <h1>Footer</h1>
+        </div>
+
+
+
+
+        <!-- end -->
+    </div>
+
+
+
+
+
+</body>
+
+</html>
