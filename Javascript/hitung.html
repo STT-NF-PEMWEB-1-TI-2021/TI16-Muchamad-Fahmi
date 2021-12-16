@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+
+    <script>
+        function hitung() {
+            let bil_pertama = Number(document.getElementById("bil1").value);
+            let bil_kedua = Number(document.getElementById("bil2").value);
+            let hasil = bil_pertama + bil_kedua;
+            document.getElementById("hasilnya").value = hasil;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form action="">
+        <input type="text" name="" id="bil1" value="0" onchange="hitung()" />
+        <br>
+        <b>+</b><br><input type="text" name="" id="bil2" value="0" onchange="hitung()" />
+        <br>
+        <b>=</b><br>
+        <input type="text" name="" id="hasilnya" value="0" />
+    </form>
+
+</body>
+
+</html>
